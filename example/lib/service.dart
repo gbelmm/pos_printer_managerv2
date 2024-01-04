@@ -1,5 +1,6 @@
 import 'dart:typed_data';
-import 'package:esc_pos_utils_plus/esc_pos_utils.dart';
+
+import 'package:flutter_esc_pos_utils_v2/flutter_esc_pos_utils_v2.dart';
 import 'package:image/image.dart' as img;
 
 class ESCPrinterService {

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pos_printer_manager/pos_printer_manager.dart';
 import 'package:pos_printer_manager_example/webview_helper.dart';
 import 'package:webcontent_converter/webcontent_converter.dart';
+
 import 'demo.dart';
 import 'service.dart';
 
@@ -21,23 +22,23 @@ class _NetWorkPrinterScreenState extends State<NetWorkPrinterScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Network Printer Screen ${printProfiles.length}"),
+        title: Text("Network Printer Screen "),
         actions: [
-          PopupMenuButton(
-            itemBuilder: (_) => printProfiles
-                .map(
-                  (e) => PopupMenuItem(
-                    enabled: e["key"] != _name,
-                    child: Text("${e["key"]}"),
-                    onTap: () {
-                      setState(() {
-                        _name = e["key"];
-                      });
-                    },
-                  ),
-                )
-                .toList(),
-          )
+          // PopupMenuButton(
+          //   itemBuilder: (_) => printProfiles
+          //       .map(
+          //         (e) => PopupMenuItem(
+          //           enabled: e["key"] != _name,
+          //           child: Text("${e["key"]}"),
+          //           onTap: () {
+          //             setState(() {
+          //               _name = e["key"];
+          //             });
+          //           },
+          //         ),
+          //       )
+          //       .toList(),
+          // )
         ],
       ),
       body: ListView(
