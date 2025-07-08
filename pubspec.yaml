@@ -19,7 +19,9 @@ dependencies:
   easy_logger: ^0.0.2
   printing:
     git:
-      url: https://github.com/gbelmm/dart_pdf/tree/master/printing
+      url: https://github.com/gbelmm/dart_pdf.git
+      path: printing
+      ref: master
   win32: ^5.0.7
   ffi: ^2.1.0
   flutter_usb_printer:
